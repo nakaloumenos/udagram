@@ -23,7 +23,7 @@ export const s3 = new AWS.S3({
  * @Returns:
  *    a url as a string
  */
-export function xgetGetSignedUrl(key: string): string {
+export function getGetSignedUrl(key: string): string {
   const signedUrlExpireSeconds = 60 * 5;
 
   const url = s3.getSignedUrl("getObject", {
