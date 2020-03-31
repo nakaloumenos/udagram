@@ -21,7 +21,7 @@ async function comparePasswords(
   plainTextPassword: string,
   hash: string
 ): Promise<boolean> {
-  //@TODO Use Bcrypt to Compare your password to your Salted Hashed Password
+  return await bcrypt.compare(plainTextPassword, hash);
   return;
 }
 
