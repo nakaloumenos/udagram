@@ -17,7 +17,7 @@ router.get("/", async (req: Request, res: Response) => {
 });
 
 // Get a specific resource by Primary Key
-router.get("/:id", requireAuth, async (req: Request, res: Response) => {
+router.get("/:id", async (req: Request, res: Response) => {
   let { id } = req.params;
 
   if (!id) {
