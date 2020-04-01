@@ -1,8 +1,11 @@
 # Project 2: Udagram
 
 Program: Cloud Developer Nanodegree
+
 Module: Full Stack Apps on AWS
+
 Project: Udagram: Your Own Instagram on AWS
+
 Student: Nikolaos Alexandros Kaloumenos
 
 ---
