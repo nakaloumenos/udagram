@@ -1,0 +1,20 @@
+branch-defaults:
+  default:
+    environment: filter-service-dev
+    group_suffix: null
+deploy:
+  artifact: ./www/Archive.zip
+global:
+  application_name: filter-service
+  branch: null
+  default_ec2_keyname: aws-eb-filter
+  default_platform: Node.js
+  default_region: eu-west-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: null
+  sc: null
+  workspace_type: Application
