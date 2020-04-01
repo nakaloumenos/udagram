@@ -26,7 +26,7 @@ The Git repository for the filtering service is located [here](https://github.co
 
 ## Elastic Beanstalk dashboard
 
-![screenshot](https://github.com/nakaloumenos/udagram/blob/master/Screenshot%202020-04-01%20at%2023.11.50.png)
+![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/Screenshot%202020-04-01%20at%2023.11.50.png)
 
 ---
 
