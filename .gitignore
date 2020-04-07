@@ -40,3 +40,9 @@ venv/
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+udacity-deployment/k8s/aws-secret\.yaml
+
+udacity-deployment/k8s/env-configmap\.yaml
+
+udacity-deployment/k8s/env-secret\.yaml
