@@ -1,0 +1,48 @@
+version: "3"
+services:
+  reverseproxy:
+    image: nakaloumenos/reverseproxy
+    ports:
+      - "8080:8080"
+    restart: always
+    depends_on:
+      - backend-user
+      - backend-feed
+  backend-user:
+    image: nakaloumenos/udacity-restapi-user
+    environment:
+      POSTGRESS_USERNAME: $POSTGRESS_USERNAME
+      POSTGRESS_PASSWORD: $POSTGRESS_PASSWORD
+      POSTGRESS_DB: $POSTGRESS_DB
+      POSTGRESS_HOST: $POSTGRESS_HOST
+      AWS_REGION: $AWS_REGION
+      AWS_PROFILE: $AWS_PROFILE
+      AWS_BUCKET: $AWS_BUCKET
+      JWT_SECRET: $JWT_SECRET
+      URL: "http://localhost:8100"
+      http.cors.enabled: "true"
+      http.cors.allow-origin: http://localhost:8100
+      http.cors.allow-headers: X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization
+      http.cors.allow-credentials: "true"
+  backend-feed:
+    image: nakaloumenos/udacity-restapi-feed
+    volumes:
+      - $HOME/.aws:/root/.aws
+    environment:
+      POSTGRESS_USERNAME: $POSTGRESS_USERNAME
+      POSTGRESS_PASSWORD: $POSTGRESS_PASSWORD
+      POSTGRESS_DB: $POSTGRESS_DB
+      POSTGRESS_HOST: $POSTGRESS_HOST
+      AWS_REGION: $AWS_REGION
+      AWS_PROFILE: $AWS_PROFILE
+      AWS_BUCKET: $AWS_BUCKET
+      JWT_SECRET: $JWT_SECRET
+      URL: "http://localhost:8100"
+      http.cors.enabled: "true"
+      http.cors.allow-origin: http://localhost:8100
+      http.cors.allow-headers: X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization
+      http.cors.allow-credentials: "true"
+  frontend:
+    image: nakaloumenos/udacity-frontend
+    ports:
+      - "8100:80"
