@@ -1,38 +1,37 @@
-# Project 2: Udagram
+# Project 4: Refactor Udagram app into Microservices
 
 Program: Cloud Developer Nanodegree
 
-Module: Full Stack Apps on AWS
+Module: Monolith to Microservices at Scale
 
-Project: Udagram: Your Own Instagram on AWS
+Project: Refactor Udagram app into Microservices
 
 Student: Nikolaos Alexandros Kaloumenos
 
 ---
 
-## Repository
-
-The Git repository for the filtering service is located [here](https://github.com/nakaloumenos/udagram/tree/master/image-filter-starter-code)
-
 ## Links
 
-### Domain
+### Docker Hub
 
-[filter-service-dev.eu-west-2.elasticbeanstalk.com](filter-service-dev.eu-west-2.elasticbeanstalk.com)
+[https://hub.docker.com/u/nakaloumenos](https://hub.docker.com/u/nakaloumenos)
 
-### Endpoint URL
+### Travis CI
 
-[filter-service-dev.eu-west-2.elasticbeanstalk.com/filteredimage?image_url={URL}](filter-service-dev.eu-west-2.elasticbeanstalk.com/filteredimage?image_url={URL})
-
-> _tip_: The example image_url provided on the **project rubric** is not found -> https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg
-> You can use [this](https://img.devrant.com/devrant/rant/r_176806_tUT9D.jpg) one :)
-
-## Elastic Beanstalk dashboard
-
-![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/Screenshot%202020-04-01%20at%2023.11.50.png)
+[https://travis-ci.com/github/nakaloumenos/udagram](https://travis-ci.com/github/nakaloumenos/udagram)
 
 ---
 
-## Stand Out (Optional)
+## Screenshots
 
-Not implemented
+### Travis CI
+
+![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/travis.png)
+
+### Kubernetes
+
+![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/kubernetes.png)
+
+### App
+
+![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/app.png)
