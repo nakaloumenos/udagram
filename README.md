@@ -26,12 +26,14 @@ Student: Nikolaos Alexandros Kaloumenos
 
 ### Travis CI
 
-![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/travis.png)
+![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/screenshots/travis.png)
 
 ### Kubernetes
 
-![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/kubernetes.png)
+![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/screenshots/eks.png)
+
+![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/screenshots/kubernetes.png)
 
 ### App
 
-![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/app.png)
+![screenshot](https://github.com/nakaloumenos/udagram/blob/dev/screenshots/app.png)
